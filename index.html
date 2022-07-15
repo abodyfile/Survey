@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">
+      School survey form
+    </h1>
+    <p id="description">
+      thank you for taking this survey to improve our school
+    </p>
+  </header>
+
+  <main class="main-form">
+    <form id="survey-form">
+      <div class="top-div">
+        <label id="name-label" class="form-top">Name </label>
+
+        <input class="input-top" name="name" id="name" type="text" placeholder="Name" required>
+
+        <label id="email-label" class="form-top">Email </label>
+
+        <input class="input-top" name="email" id="email" type="email" placeholder="Email" required>
+
+        <label id="number-label" class="form-top">Age </label>
+
+        <input class="input-top" name="age" id="number" type="number" min="13" max="21" placeholder="15">
+      </div>
+
+      <div class="top-mid-div">
+        <p class="1-q">what is your grade now?</p>
+        <select id="dropdown">
+          <option disabled selected value>Select your grade</option>
+          <option>9th grade</option>
+          <option>10th grade</option>
+          <option>11th grade</option>
+          <option>12th grade</option>
+
+        </select>
+      </div>
+
+      <div class="mid-div">
+        <p class="2-q">
+          do you recommend this school to a family members?
+        </p>
+        <input class="mid-input" name="radio" type="radio" value="Yes">
+
+        <label>Yes</label>
+
+        <input class="mid-input" name="radio" type="radio" value="No">
+
+        <label>No</label>
+      </div>
+
+      <div class="bottom-mid-div">
+        <p class="3-q">
+          what do you think is good in this school?
+        </p>
+        <label class="label-bottom">
+          <input type="checkbox" value="teacher" name="teacher" class="input-bottom">
+
+          Teacher
+        </label>
+        <label  class="label-bottom">
+          <input type="checkbox" value="building" name="building" class="input-bottom">
+
+          Building
+        </label>
+
+        <label  class="label-bottom">
+          <input type="checkbox" value="rooms" name="rooms" class="input-bottom">
+          Rooms
+        </label>
+
+        <label  class="label-bottom">
+          <input type="checkbox" value="tools" name="tools" class="input-bottom">
+
+          Tools
+        </label>
+        <p class="extra-good-things">If there is other thing</p>
+        <textarea placeholder="enter here.." name="comment-1" id="comment-1" class="comment"></textarea>
+
+
+      </div>
+      <div>
+        <p class="4-q">any suggestion to improve our school?</p>
+        <textarea placeholder="enter here.. for example, building outdated." name="comment-2" id="comment-2" class="comment"></textarea>
+
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </main>
+</body>
+
+</html>
